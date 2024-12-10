@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch Mind - Diary List</title>
+    <link rel="stylesheet" href="../css/1.diary.css"> <!-- CSS 파일 연결 -->
+    <script src="../js/1.diary.js" defer></script>
+</head>
+<body>
+    <!-- 로고 텍스트 - 페이지 왼쪽 상단 고정 -->
+    <a href="0.main.html" class="logo">MindTouch</a>
+
+    <!-- 포스트잇들 -->
+    <a href="0.main.html" class="yellow-post-it">인삿말</a>
+    <a href="1.diary.html" class="green-post-it">감정일기</a>
+    <a href="2.recommend.html" class="purple-post-it">추천</a>
+
+    <!-- 네모 박스 (뒤에 겹쳐 보이는 페이지들) -->
+    <div class="overlay1"></div> <!-- 첫 번째 네모 -->
+    <div class="overlay2"></div> <!-- 두 번째 네모 -->
+
+    <!-- 메인 컨테이너 (일기 목록 페이지) -->
+    <div class="container">
+       <!-- 속지 (배경) -->
+       <div class="inner-page">
+
+        <!-- 속지 위 내용 : 본문이 나오는 부분 -->
+        <div class="content">
+            <!-- 1. 날짜 표시 영역 -->
+            <div class="date-display" id="date-display"></div>
+
+             <!-- 2. 감정 선택 박스 -->
+             <div class="emotion-box">
+                <p>오늘의 감정을 체크해 주세요. 여러 개를 선택해도 좋아요 !</p>
+                <div class="emotion-list">
+                    <span class="emotion">좋아요</span>
+                    <span class="emotion">슬퍼요</span>
+                    <span class="emotion">화나요</span>
+                    <span class="emotion">우울해요</span>
+                    <span class="emotion">그저 그래요</span>
+                    <span class="emotion">신나요</span>
+                    <span class="emotion">후회돼요</span>
+                    <span class="emotion">행복해요</span>
+                    <span class="emotion">미안해요</span>
+                    <span class="emotion">불안해요</span>
+                    <span class="emotion">지루해요</span>
+                    <span class="emotion">피곤해요</span>
+                </div>
+            </div>
+
+            <!-- 3. 제목 입력란 -->
+            <div class="title-box">
+                <p>제목 :</p>
+                <input type="text" id="title" name="title" maxlength="20" placeholder="제목을 입력하세요">
+            </div>
+
+            <!-- 4. 오늘 하루는 어땠나요  -->
+            <div class="text-box">
+                <label for="day-experience">오늘 하루는 어땠나요?</label>
+                <textarea id="day-experience" rows="10" placeholder="오늘 하루를 자유롭게 적어보세요."></textarea>
+            </div>
+
+            <!-- 5. 감정 이야기  -->
+            <div class="text-box">
+                <label for="feeling-reason">왜 그런 감정을 느꼈나요? 얘기해 주세요 :)</label>
+                <textarea id="feeling-reason" rows="8" placeholder="느낀 감정의 이유를 적어보세요."></textarea>
+            </div>
+
+            <!-- 6. 저장 버튼 -->
+            <div class="button-container">
+                <button type="button" class="save-button"><pre>저   장</pre></button>
+            </div>            
+
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>
