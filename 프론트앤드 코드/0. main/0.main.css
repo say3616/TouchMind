@@ -1,0 +1,129 @@
+/* 기본 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #D7BBA9; /*테이블 색상*/
+}
+
+/* 메인 컨테이너 */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh; /* 화면 전체 높이 */
+}
+
+.main-page {
+    background-color: #FAEFE2;
+    flex: 9.6;
+}
+
+/* 로고 스타일 */
+.logo {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    font-size: 3em;
+    font-weight: bold;
+    color: #8A350D;
+}
+
+/* 본문 스타일 */
+.content {
+    text-align: left;
+    padding-top: 25%;
+    margin-left: 50px; /* 왼쪽에 여백 추가 */
+    color: #8A350D;
+}
+
+.content h1 {
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+
+.content p {
+    font-size: 1.5em;
+    line-height: 2;
+}
+
+.second-page {
+    flex: 0.2;
+    background-color: #C2ADA3;
+    margin-top: 10px; /* 2번째 페이지 아래로 이동 */
+}
+
+.third-page {
+    flex: 0.2;
+    background-color: #AA958B;
+    margin-top: 20px; /* 3번째 페이지 더 아래로 이동 */
+}
+
+
+/* 테이블 */
+.table {
+    background-color: #D7BBA9;
+    flex: 3; /* 테이블 부분 두께 */
+}
+
+/* 포스트잇 스타일 */
+.yellow-post-it {
+    position: absolute;
+    top: 10%; /* 첫 번째 페이지의 상단 끝에 배치 */
+    right: calc(20% - 5px); /* 첫 번째 페이지 끝에 위치시키기 위해 계산 */
+    width:110px;
+    height:230px;
+    background-color: #FEF3B7; /* 노란색 포스트잇 배경 */
+    color: #814a25;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 15; /* 다른 요소 위에 보이도록 설정 */
+}
+
+/* 포스트잇 스타일 */
+.green-post-it {
+    position: absolute;
+    top: 40%; 
+    right: calc(20% - 22px); 
+    width:100px;
+    height:230px;
+    background-color: #D8FDD9; 
+    color: #814a25;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 15; /* 다른 요소 위에 보이도록 설정 */
+}
+
+/* 포스트잇 스타일 */
+.purple-post-it {
+    position: absolute;
+    top: 70%; 
+    right: calc(20% - 48px); 
+    width:100px;
+    height:230px;
+    background-color: #E1DCE9; 
+    color: #814a25;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 15; /* 다른 요소 위에 보이도록 설정 */
+}
+
+/* 링크 스타일 - 밑줄 제거 */
+a {
+    text-decoration: none;
+    color: inherit; /* 텍스트 색상을 부모 요소와 동일하게 설정 */
+}
